@@ -1,0 +1,23 @@
+{
+    "storage": {
+        "input": {
+            "tables": [
+                {
+                    "source": "out.c-test.sample.training",
+                    "destination": "source.csv",
+                    "limit": 50,
+                    "columns": [],
+                    "where_values": [],
+                    "where_operator": "eq"
+                }
+            ],
+            "files": []
+        }
+    },
+    "parameters": {
+        "print_rows": true
+    },
+    "image_parameters": {},
+    "action": "run",
+    "authorization": {}
+}
