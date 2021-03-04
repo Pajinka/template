@@ -28,4 +28,4 @@ with open(source_file_path, 'r') as input, open(result_file_path, 'w+', newline=
             #print(f'Printing line {index}: {l}')
         l['row_number'] = index
         writer.writerow(l)
-        print('hotovo')
+    print('hotovo')
