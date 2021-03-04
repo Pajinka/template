@@ -1,19 +1,18 @@
 import csv
 import json
 from pathlib import Path
-import sys
 
 #data_folder = Path(sys.environ.get('KBC_DATADIR'))
 data_folder = Path('./data')
 
-source_file_path = Path('data/in/tables/source.csv')
-result_file_path = Path('data/out/tables/output.csv')
+#source_file_path = Path('data/in/tables/source.csv')
+#result_file_path = Path('data/out/tables/output.csv')
 
-#source_file_path = data_folder.joinpath('in/tables/input.csv')
-#result_file_path = data_folder.joinpath('out/tables/output.csv')
+source_file_path = data_folder.joinpath('in/tables/source.csv')
+result_file_path = data_folder.joinpath('out/tables/output.csv')
 
 config = json.load(open(data_folder.joinpath('config.json')))
-param_print_lines = True
+param_print_lines = config['parameters']['print_rows']
 
 print('Running')
 
