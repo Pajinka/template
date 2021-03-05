@@ -11,7 +11,7 @@ result_file_path = Path('data/out/tables/output.csv')
 #source_file_path = data_folder.joinpath('in/tables/input.csv')
 #result_file_path = data_folder.joinpath('out/tables/output.csv')
 
-config = json.load(open(data_folder.joinpath('config.json')))
+#config = json.load(open(data_folder.joinpath('config.json')))
 #param_print_lines = config['parameters']['print_rows']
 
 print('Running')
